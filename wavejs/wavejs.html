@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wave.js</title>
+    <style>
+        * { box-sizing: border-box; }
+        body, html {
+            margin: 0; padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            background: #48aace;
+            background: -moz-linear-gradient(top, #48aace 0%, #2c78b2 100%);
+            background: -webkit-linear-gradient(top, #48aace 0%,#2c78b2 100%);
+            background: linear-gradient(to bottom, #48aace 0%,#2c78b2 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48aace', endColorstr='#2c78b2',GradientType=0 );
+        }
+
+        h1 {
+            color: #c2c2c2; font-family: 'Roboto', sans-serif; font-weight: lighter; font-size: 2.5rem;
+        }
+
+        .sky {
+            text-align: center; padding: 100px 0 200px 0; margin: 0;
+            background: #c9e1e8;
+            background: -moz-linear-gradient(top, #c9e1e8 0%, #a1d9ea 100%);
+            background: -webkit-linear-gradient(top, #c9e1e8 0%,#a1d9ea 100%);
+            background: linear-gradient(to bottom, #c9e1e8 0%,#a1d9ea 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9e1e8', endColorstr='#a1d9ea',GradientType=0 );
+        }
+
+        #wave {
+            width: 100%; height: 150px;;
+        }
+
+    </style>
+</head>
+<body style="margin: 0; padding: 0;">
+<div class="sky"><h1 style="">wave.js</h1></div>
+<canvas id="wave"></canvas>
+
+<script src="wave.js"></script>
+<script>
+    var wave = new wave.js('wave', {
+        waves: [
+            {
+                backgroundColor: '#a1d9ea',
+                strokeColor: false,
+                speed: 1,
+                distance: 100,
+                drift: 40,
+                upsidedown: true
+            },
+            {
+                backgroundColor: 'rgba(#a1d9ea, 0.2)',
+                strokeColor: false,
+                speed: 1,
+                distance: 30,
+                drift: 40,
+                upsidedown: true
+            }
+        ]
+    });
+</script>
+</body>
+</html>
