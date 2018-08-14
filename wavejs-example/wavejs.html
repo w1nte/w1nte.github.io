@@ -10,11 +10,7 @@
             height: 100%;
             width: 100%;
             overflow: hidden;
-            background: #48aace;
-            background: -moz-linear-gradient(top, #48aace 0%, #2c78b2 100%);
-            background: -webkit-linear-gradient(top, #48aace 0%,#2c78b2 100%);
-            background: linear-gradient(to bottom, #48aace 0%,#2c78b2 100%);
-            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48aace', endColorstr='#2c78b2',GradientType=0 );
+            background: white;
         }
 
         h1 {
@@ -23,15 +19,15 @@
 
         .sky {
             text-align: center; padding: 100px 0 200px 0; margin: 0;
-            background: #c9e1e8;
-            background: -moz-linear-gradient(top, #c9e1e8 0%, #a1d9ea 100%);
-            background: -webkit-linear-gradient(top, #c9e1e8 0%,#a1d9ea 100%);
-            background: linear-gradient(to bottom, #c9e1e8 0%,#a1d9ea 100%);
-            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9e1e8', endColorstr='#a1d9ea',GradientType=0 );
+            background: #16191b;
+            background: -moz-linear-gradient(top, #141f37 0%, #0d0e1c 100%);
+            background: -webkit-linear-gradient(top, #141f37 0%, #0d0e1c 100%);
+            background: linear-gradient(to bottom, #141f37 0%, #0d0e1c 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#141f37', endColorstr='#0d0e1c',GradientType=0 );
         }
 
         #wave {
-            width: 100%; height: 150px;;
+            width: 100%; height: 150px;
         }
 
     </style>
@@ -45,18 +41,10 @@
     var wave = new wave.js('wave', {
         waves: [
             {
-                backgroundColor: '#a1d9ea',
+                backgroundColor: '#0d0e1c',
                 strokeColor: false,
                 speed: 1,
-                distance: 100,
-                drift: 40,
-                upsidedown: true
-            },
-            {
-                backgroundColor: 'rgba(#a1d9ea, 0.2)',
-                strokeColor: false,
-                speed: 1,
-                distance: 30,
+                distance: 400,
                 drift: 40,
                 upsidedown: true
             }
