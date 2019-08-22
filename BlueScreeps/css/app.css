@@ -9,8 +9,6 @@ body {
 }
 
 body, html {
-    padding: 0;
-    margin: 0;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     color: white;
     background-color: #060314;
